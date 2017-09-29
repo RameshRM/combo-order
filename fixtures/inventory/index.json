@@ -1,0 +1,54 @@
+{
+    "inventory": {
+        "categories": [{
+                "id": "B7V403JN6CAFG",
+                "name": "Snacks",
+                "items": [{
+                        "id": "27Y2TFTQEJ0JG",
+                        "name": "Pop Chips",
+                        "price": 80
+                    },
+                    {
+                        "id": "JHMB2S8V3TC7R",
+                        "name": "Almonds",
+                        "price": 10
+                    },
+                    {
+                        "id": "4B8MA87HMQJVR",
+                        "name": "Gum",
+                        "price": 10
+                    }
+                ]
+            },
+            {
+                "id": "B7V403JN6CAFG.1",
+                "name": "Snacks & Drinks",
+                "items": [{
+                        "id": "1",
+                        "name": "Pop Chips",
+                        "price": 80
+                    }
+                ]
+            }, {
+                "id": "G24M40FB7TDW0",
+                "name": "Drinks",
+                "items": [{
+                        "id": "Z9C0CS8VP413R",
+                        "name": "Diet Coke",
+                        "price": 50
+                    },
+                    {
+                        "id": "YK5YD8NCPXY86",
+                        "name": "Coke Zero",
+                        "price": 50
+                    },
+                    {
+                        "id": "TQM1F7V8YSW6M",
+                        "name": "Lemonade",
+                        "price": 50
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "combos": [{
+            "id": "R3VC63KP6XZ1T",
+            "name": "Combo Meal",
+            "discount": -50,
+            "categories": [
+                "B7V403JN6CAFG",
+                "B7V403JN6CAFG",
+                "G24M40FB7TDW0"
+            ]
+        },
+        {
+            "id": "R3VC63KP6XZ1T1",
+            "name": "Combo Meal",
+            "discount": -50,
+            "categories": [
+                "B7V403JN6CAFG",
+                "B7V403JN6CAFG",
+                "B7V403JN6CAFG"
+            ]
+        },
+        {
+            "id": "N7FNFE53X2ZCT",
+            "name": "Mini Combo",
+            "discount": -20,
+            "categories": [
+                "G24M40FB7TDW0",
+                "B7V403JN6CAFG"
+            ]
+        }
+    ]
+}
