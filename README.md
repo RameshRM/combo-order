@@ -13,7 +13,7 @@ Summary:
 The Module is **Dockerized**, pull the image from public [Docker Hub](https://hub.docker.com/).
 
 ``
-  docker pull ramesh1211/combo-order:341cb4e477d3
+  docker pull ramesh1211/combo-order:59cceefffe84
 ``
 
 ## Usage
