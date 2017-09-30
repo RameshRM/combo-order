@@ -15,6 +15,8 @@ The Module is **Dockerized**, pull the image from public [Docker Hub](https://hu
   docker run fea3f6262ebd //This will run the Tests associated with the Combo Order Project.
 ```
 
+If you have `NodeJs, NPM`, Clone the Git and run `npm run start`.
+
 
 > Language of Choice used NodeJs
 
