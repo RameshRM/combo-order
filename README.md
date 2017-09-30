@@ -62,7 +62,6 @@ The Module is **Dockerized**, pull the image from public [Docker Hub](https://hu
 
 * **`findMatchingRule`**
 
-
   **Input Parameters**
 
   - `ruleIds`: Collection of RuleIds for the Ordered Item Category.
@@ -83,3 +82,7 @@ The Module is **Dockerized**, pull the image from public [Docker Hub](https://hu
   * If matching RuleSet has more than one item, find the Max Discount from the competing result. [Source](https://github.com/RameshRM/combo-order/blob/master/lib/order/index.js#L104-L111)
 
   * Return the matching RuleId.
+
+**Output**
+
+Returns the Matching Rule, which has the Maximum Discount %.

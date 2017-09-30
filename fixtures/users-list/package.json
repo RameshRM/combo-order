@@ -1,0 +1,15 @@
+{
+    "name": "users",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test/index.js",
+        "build0": "rm -rf node_modules && npm cache clean && npm install &&  zip -r ${PWD##*/}.zip index.js node_modules "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "optimus-db": "file:///Users/ramahadevan/github.com/foo-bar/optimus-db"
+    }
+}
