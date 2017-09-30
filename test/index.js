@@ -1,15 +1,17 @@
 'use strict';
 
 var assert = require('assert');
+var debug = require('debug')('combo-order');
 
 describe('Should be able to create Orders', function() {
 
+  debug('Initializing and Building Data Sets');
   var OrderFn = require('../lib/order');
   var fixtures = require('../fixtures/');
 
   var itemCategories = fixtures.itemCategories(); //Build Item Category
   var comboRuleSet = fixtures.buildComboRuleSet(); //Build Combo Rule Set
-
+  debug('Initializing and Building Data Sets');
   before(function(done) {
     done();
   });
@@ -22,8 +24,10 @@ describe('Should be able to create Orders', function() {
       comboRuleSet: comboRuleSet,
       categoryRules: fixtures.flattenRuleCategories(fixtures.combos)
     });
+
     var comboRule = order.add('4B8MA87HMQJVR');
     assert.ok(!comboRule); //Returns Null / Undefined;
+
     done();
   });
 
@@ -38,11 +42,12 @@ describe('Should be able to create Orders', function() {
     var comboRule;
 
     comboRule = order.add('4B8MA87HMQJVR');
+
     assert.ok(!comboRule); //NO Combo
 
     comboRule = order.add('TQM1F7V8YSW6M');
     assert.ok(comboRule === 'N7FNFE53X2ZCT');
-    
+
     done();
   });
 

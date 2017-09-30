@@ -13,5 +13,6 @@ RUN npm install
 COPY . /usr/src/app
 
 EXPOSE 3030
+ENV DEBUG=combo-order
 
 CMD [ "npm", "start" ]
