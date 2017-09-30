@@ -1,6 +1,14 @@
 # Combo Order
 
+Summary:
+
+`Combo Order` module is to figure out Combo Ruleset matching while you order an item in the store.
+
+> Language : NodeJs
+
 ## Install
+
+### Installing with Docker
 
 The Module is **Dockerized**, pull the image from public [Docker Hub](https://hub.docker.com/).
 
@@ -15,10 +23,22 @@ The Module is **Dockerized**, pull the image from public [Docker Hub](https://hu
   docker run fea3f6262ebd //This will run the Tests associated with the Combo Order Project.
 ```
 
-If you have `NodeJs, NPM`, Clone the Git and run `npm run start`.
+> Why Docker ? If you have Docker you don't have to install NodeJs Runtime and other version related issues. Pull the Image from the Docker Hub and run.
 
 
-> Language of Choice used NodeJs
+### Installing with NodeJs
+
+*If you have **`Node JS & Npm`** clone the git and run the following.*
+
+```
+  git clone https://github.com/RameshRM/combo-order.git
+  cd combo-order
+
+  npm install //Installs all the `Test libraries` and Other Dependencies (similar to `mvn install`)
+
+  npm run test //Runs all the Tests.
+
+```
 
 ## Approach
 
@@ -73,7 +93,7 @@ If you have `NodeJs, NPM`, Clone the Git and run `npm run start`.
 
   **Processing Logic**
 
-  * Iterate for Every RuleIds matching the Order Category
+  * Iterate for Every **RuleIds** matching the Order Category
 
   * Find Combo Rule for the RuleId
 
@@ -87,4 +107,4 @@ If you have `NodeJs, NPM`, Clone the Git and run `npm run start`.
 
 **Output**
 
-Returns the Matching Rule, which has the Maximum Discount %.
+Returns the Matching Rule, which has the Maximum Discount %. If the ruleSet has > 1 Combo Rule, finds the Max discount by `Math.min(lastDiscount, currentDiscount)`.
